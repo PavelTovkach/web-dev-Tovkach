@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practical 3</title>
+<style>
+  article {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  p {
+    border: 1px dashed green;
+    padding: 5px;
+    margin: 5px;
+  }
+  p.bg-color {
+    background-color: #f0f0f0;
+  }
+  
+  p.bg-gradient {
+    background: linear-gradient(to right, #ffcccc, #6699ff);
+  }
+  
+  p.bg-repeating {
+    background: repeating-linear-gradient(45deg, #ffcc99, #ffcc99 10px, #6699ff 10px, #6699ff 20px);
+  }
+  
+  p.bg-image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  p.bg-multiple {
+    background-image: url('overlay1.png'), url('overlay2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-blend-mode: multiply, overlay;
+  }
+  
+  h1 {
+    border: 3px double red;
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  h4 {
+    border: 1px solid purple;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+<main>
+<article>
+<h1>Opening Developer's Console</h1>
+<p>To open the developer's console in Mozilla Firefox, you can either right-click on the page and select "Inspect Element" or press Ctrl+Shift+I on your keyboard. In Safari, you can access the console by going to Preferences > Advanced and checking the box next to "Show Develop menu in menu bar". Then you can go to Develop > Show Error Console to open the console.</p>
+<p class="bg-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis mollis hendrerit, ex eros efficitur justo, ultricies tincidunt leo nunc at justo.</p>
+<h2>Internal Links</h2>
+<p>Generally, using relative links is preferable for including internal links in an HTML page. Relative links are easier to maintain and are more flexible. Absolute links should be used when linking to external content or when you need to provide a specific link that won't change.</p>
+<p class="bg-gradient">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+<h3>Image Formats</h3>
+<p>In web development, there are several common image formats used such as JPG, GIF, PNG, WEBP, and SVG. JPG (or JPEG) is best for photographs, as it supports millions of colors and compression. GIF is great for graphics with animations or transparency. PNG is good for images with transparency or for screenshots, as it supports lossless compression. WEBP is a newer format developed by Google that provides both lossy and lossless compression, resulting in smaller file sizes. SVG is a vector format that is scalable without losing quality, ideal for logos or icons.</p>
+<p class="bg-repeating">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+<h4>Screenshot</h4>
+<p><img src="3.png" alt="Screenshot"></p>
+</article>
+</main>
+</body>
+</html>
